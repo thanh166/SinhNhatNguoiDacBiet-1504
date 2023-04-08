@@ -10,10 +10,10 @@ body {
         color-stop(0%, #374566),
         color-stop(100%, #010203)
     );
-    background-image: -webkit-radial-gradient(#374566, #010203);
-    background-image: -moz-radial-gradient(#374566, #010203);
-    background-image: -o-radial-gradient(#374566, #010203);
-    background-image: radial-gradient(#374566, #010203);
+    background-image: -webkit-radial-gradient(#ff0080, #d0eaf0);
+    background-image: -moz-radial-gradient(#ff0080, #d0eaf0);
+    background-image: -o-radial-gradient(#ff0080, #d0eaf0);
+    background-image: radial-gradient(#ff0080, #d0eaf0);
     font-family: 'Lobster', cursive;
 }
 span {
@@ -225,14 +225,15 @@ span {
 }
 
 /* Avatar  */
+
 .avatar {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    left: calc(50% - 100px);
+    left: calc(35%);
 }
 
-.avatar__img {
+.avatar__a {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -246,7 +247,7 @@ span {
 
 .avatar__title {
     cursor: pointer;
-    margin-top: -100px;
+    margin-top: -180px;
     -webkit-animation: balloon1 4s ease-in-out infinite;
     -moz-animation: balloon1 4s ease-in-out infinite;
     -o-animation: balloon1 4s ease-in-out infinite;

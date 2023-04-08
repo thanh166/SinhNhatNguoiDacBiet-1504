@@ -63,16 +63,19 @@
                 </div>
                 <div class="avatar">
                     <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
-                    <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                    <video width="100%" height="250px" autoplay loop>
+                        <source src="../sinhnhat.mp4" alt="" class="avatar__a" onclick="showMessage()">
+                    </video>
+                    <!-- <img src="./anh1.jpg" alt="" class="avatar__img" onclick="showMessage()" /> -->
                     <!-- 4. Tên của người đó -->
-                    <h1 onclick="showMessage()" class="avatar__title">Ngọc Tiến</h1>
+                    <h1 onclick="showMessage()" class="avatar__title">Lành Phạm </h1>
                 </div>
                 
                 <!-- 5. Phần nhạc -->
                 <!-- <audio id="player" autoplay loop>
                     <source src="./music.mp3" type="audio/mp3">
-                </audio> -->
-            </div>
+                </audio>
+            </div> -->
         </div>
         <script>
             if (document.location.search.match(/type=embed/gi)) {
@@ -81,8 +84,8 @@
             function showMessage() {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
-                    title: "Lời nhắn", // Tiêu đề của popup
-                    text: "Gửi đến tôi, chàng trai năm 20 tuổi, hãy biết cố gắng thật nhiều để sau này không hối hận, hãy biết yêu thương bản thân để luôn có sức khỏe khỏe mạnh, hãy biết hiếu thuận gia đình để bố mẹ không bao giờ buồn, và cũng hãy đi tìm nàng công chúa của mình đi nào.", // Nội dung lời nhắn
+                    title: "Lời chúc", // Tiêu đề của popup
+                    text: "Chúc mừng sinh nhật cô gái. Chúc you tuổi mới thật zui zẻ và hạnh phúc vì những điều đang có. Chúc you thật thành công với những điều đang làm, sắp làm và sẽ làm. Chúc you sẽ luôn zui zẻ, hạnh phúc vì những điều đã xảy ra, đang xảy ra và sắp xảy ra. Chúc you mọi sự tốt đẹp, mọi điều may mắn <3! ", // Nội dung lời nhắn
                     button: {
                         text: "❤️️",
                     },
